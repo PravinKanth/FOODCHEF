@@ -52,6 +52,11 @@
   .testimonials-container {
     padding: 9.6rem 3.2rem;
   }
+
+  .plan-price {
+    font-size: 4.8rem;
+    font-weight: 500;
+  }
 }
 
 @media (max-width: 59em) {
@@ -171,6 +176,15 @@
   .main-nav-link:visited {
     font-size: 3rem;
   }
+
+  .plan-price {
+    font-size: 3.2rem;
+    /* font-weight: 500; */
+  }
+
+  .btn-dum {
+    font-size: 1.6rem !important;
+  }
 }
 
 /**************************/
@@ -277,8 +291,14 @@
     padding: 3.2rem;
   }
 
-  .cta-img-box {
+  .cta-image-box {
     height: 32rem;
     grid-row: 1;
+  }
+}
+
+@media (max-width: 22em) {
+  .btn {
+    font-size: 1.5rem !important;
   }
 }
