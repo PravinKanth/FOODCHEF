@@ -574,6 +574,19 @@
   box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
 
+.btn--form1 {
+  background-color: #45260a;
+  color: #fdf2e9;
+  /* align-self: end; */
+  margin-top: 1.8rem;
+  padding: 1.2rem;
+}
+
+.btn--form1:hover {
+  background-color: #fff;
+  color: #555;
+}
+
 /******************************/
 /* Footer SECTION */
 /******************************/

@@ -10,10 +10,8 @@
     <meta
       name="description"
       content="FOODCHEF is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's Tailored to your personal tastes and nutritional needs."
-      <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
@@ -46,7 +44,7 @@
             <a class="main-nav-link" href="#testimonials">Testimonials</a>
           </li>
           <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
-          <li><a class="main-nav-link nav-cta" href="#cta">Try for free</a></li>
+          <li><a class="main-nav-link nav-cta" href="#cta">Order now</a></li>
         </ul>
       </nav>
       <button class="btn-mobile-nav">
@@ -583,7 +581,7 @@
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
-              <h2 class="heading-secondary">Get your first meal for free!</h2>
+              <h2 class="heading-secondary">Get your meal now!</h2>
               <p class="cta-text">
                 Healthy, tasty and hassle-free meals are waiting for you. Start
                 eating well today. You can cancel or pause anytime. And the
@@ -591,7 +589,7 @@
               </p>
               <form class="cta-form" name="sign-up" netlify>
                 <div>
-                  <label for="full-name">Full Name</label>
+                  <label for="full-name">Full Name*</label>
                   <input
                     id="full-name"
                     name="full-name"
@@ -601,7 +599,7 @@
                   />
                 </div>
                 <div>
-                  <label for="email">Email address</label>
+                  <label for="email">Email address*</label>
                   <input
                     id="email"
                     name="email"
@@ -610,7 +608,73 @@
                     required
                   />
                 </div>
+
                 <div>
+                  <label for="address">Address*</label>
+                  <input
+                    id="address"
+                    name="address"
+                    type="text"
+                    placeholder="Hope College"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="pincode">Pincode*</label>
+                  <input
+                    id="pincode"
+                    name="pincode"
+                    type="text"
+                    placeholder="641659"
+                    required
+                    pattern="[0-9]+"
+                    minlength="6"
+                    maxlength="6"
+                  />
+                </div>
+                <div>
+                  <label for="phoneno">Phone number*</label>
+                  <input
+                    id="phoneno"
+                    name="phoneno"
+                    type="text"
+                    placeholder="6383683533"
+                    minlength="10"
+                    maxlength="11"
+                    pattern="[0-9]+"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="diet-plan">Diet Plan*</label>
+
+                  <select id="diet-plan" name="diet-plan" required>
+                    <option value="">Please choose one option</option>
+                    <option value="Vegetarian">Vegetarian</option>
+                    <option value="Vegan">Vegan</option>
+                    <option value="Pescatarian">Pescatarian</option>
+                    <option value="Gluten-free">Gluten-free</option>
+                    <option value="Lactose-free">Lactose-free</option>
+                    <option value="Keto">Keto</option>
+                    <option value="Paleo">Paleo</option>
+                    <option value="Low FODMAP">Low FODMAP</option>
+                    <option value="Kid-friendly">Kid-friendly</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="pack">How would you like to go with?*</label>
+
+                  <select id="pack" name="pack" required>
+                    <option value="">Please choose one option</option>
+                    <option value="Starter">Starter</option>
+                    <option value="Complete">Complete</option>
+                  </select>
+                </div>
+
+                <!-- <div>
                   <label for="select-where">Where did you hear from us?</label>
 
                   <select id="select-where" name="select-where" required>
@@ -620,9 +684,18 @@
                     <option value="podcast">Podcast</option>
                     <option value="others">Others</option>
                   </select>
-                </div>
+                </div> -->
 
-                <button class="btn btn--form">Sign up now</button>
+                <div>
+                  <label for="restaurant">Restaurant</label>
+                  <input
+                    id="restaurant"
+                    name="restaurant"
+                    type="text"
+                    placeholder="Annapoorna"
+                  />
+                </div>
+                <button class="btn btn--form1">Order now</button>
               </form>
             </div>
             <div
